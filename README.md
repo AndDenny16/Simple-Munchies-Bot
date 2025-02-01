@@ -5,9 +5,8 @@ This project is a Python script that scrapes the Davidson Commons dining menu us
 
 ## Features
 - **Scrapes** the Davidson Commons dining hall menu using Selenium.
-- **Processes** the menu text and saves it to a file.
+- **Processes** the menu text and saves it to a file ( to avoid scraping a second time for the same menu)
 - **Chatbot** allows users to ask questions about the menu using OpenAI's GPT model.
-- **Environment Variables** are used to store sensitive information.
 
 ## Requirements
 Before running the script, ensure you have the following installed:
@@ -15,12 +14,4 @@ Before running the script, ensure you have the following installed:
 - Selenium
 - OpenAI API
 - LangChain
-- `python-dotenv` for environment variables
 - `geckodriver` for Firefox (or modify to use Chrome)
-
-## Setup
-
-### 1. Install Dependencies
-Run the following command to install required packages:
-```bash
-pip install selenium openai langchain langchain-openai python-dotenv python-docx
